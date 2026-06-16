@@ -69,6 +69,10 @@ models/                trained policies (sac_parking.zip, best_model.zip)
 runs/                  TensorBoard logs + eval timeline
 ```
 
+## Note on the model files
+
+The `.zip` policies in `models/` are stable-baselines3 saves, which use Python `pickle` internally. Loading a pickle file executes code, so only load model files you trust — the ones in this repo, or models you trained yourself. Don't `SAC.load()` a `.zip` from an untrusted fork or download.
+
 ## Stack
 
 `uv` · Python 3.12 · MuJoCo 3.9 · Gymnasium 1.0 · Stable-Baselines3 (SAC) · PyTorch (CPU) · matplotlib
