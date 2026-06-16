@@ -1,0 +1,14 @@
+[project]
+name = "parkpilot"
+version = "0.1.0"
+description = "RL Ackermann auto-parking in MuJoCo — SAC parks a car-like robot into a tight slot, robust to randomized starts. Runs natively on Apple Silicon."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium<1.1",
+    "imageio>=2.37.3",
+    "mujoco>=3.9.0",
+    "numpy>=2.4.6",
+    "stable-baselines3>=2.3",
+    "tensorboard>=2.20.0",
+]
